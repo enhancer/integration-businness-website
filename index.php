@@ -66,7 +66,6 @@
   	</script>
 </head>
 <body>
-	<title>test</title>
 	<div id="header">
 	 	<div id="logo"></div>
 	  	<div id="menu">
