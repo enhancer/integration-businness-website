@@ -1,0 +1,389 @@
+body, ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+.gras
+{
+	font-weight: bold;
+}
+
+.clear
+{
+	clear: both;
+}
+
+/******************************************/
+/************** HEADER *****************/
+/******************************************/
+
+#header
+{
+	position: relative;
+	background: #e8ebf1;
+	width: 100%;
+	box-shadow: 0px 1px 1px #555;
+	padding: 33px 0px 48px 0px;
+}
+
+#logo {
+	position: relative;
+	margin: 0px 0px 0px 201px;
+  	background: url("images/logo.png") no-repeat scroll 0 0 transparent;
+  	width: 155px;
+  	height: 48px;
+}
+
+/******************************************/
+/************** MENU *****************/
+/******************************************/
+
+#menu {
+  position: relative;
+  margin: -18px 0 0 558px;
+}
+
+#menu ul li {
+	float: left;
+	list-style: none;
+	padding: 0px 10px;
+  border-top: 3px solid transparent;
+  font-family: "arial";
+}
+
+#menu ul > li:hover {
+	border-top: 3px solid #2aacc8;
+	background: #fff;
+}
+
+#menu ul > li.level1 > a:hover, #menu ul > li:hover li a:hover {
+	color: #2aacc8;
+	font-weight: normal;
+}
+
+#menu ul > li ul {
+  background: none repeat scroll 0 0 #FFFFFF;
+  display: none;
+  margin-left: -5px;
+  position: absolute;
+  width: 114px;
+  margin-left: -10px;
+}
+
+#menu ul > li:hover ul {
+  display: block;
+  z-index: 50;
+}
+
+#menu ul > li:hover li {
+	float: none;
+	border-top: none;
+}
+
+#menu ul > li.level1:hover li a{
+	font-weight: normal;
+	width: 200px;
+}
+
+/*#menu ul > li:hover li a:hover {
+	color: #2aacc8;
+	font-weight:bold;
+}*/
+
+/******************************************/
+/************** DIAPORAMA *****************/
+/******************************************/
+
+#diaporama{
+	position: relative;
+	height: 498px;
+	background: #81e4ed;
+	z-index: 10
+}
+
+ #diaporama #fond_diaporama {
+  background: none repeat scroll 0 0 #DC5735;
+  height: 443px;
+  margin: 20px 0 0 201px;
+  position: absolute;
+  width: 999px;
+  z-index: 20;
+}
+
+#diaporama .rslides {
+  list-style: none outside none;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+#diaporama .rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+#diaporama .rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+#diaporama .rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+
+#diaporama ul.rslides_tabs {
+  margin: 452px 0 0 500px;
+  position: relative;
+}
+
+  #diaporama .rslides_tabs li{
+  	float: left;
+  	padding-right:18px;
+	}
+
+  #diaporama .rslides_tabs li a{
+  	background: #626262;
+  	display: block;
+  	width: 20px;
+  	height: 18px;
+  	border-radius: 10px;
+
+  }
+
+  #diaporama .rslides_tabs li.rslides_here a{
+  	background: #fff;
+  	display: block;
+  	width: 20px;
+  	height: 18px;
+  	border-radius: 10px;
+
+  }
+
+
+/******************************************/
+/************** BAS DIAPORAMA *****************/
+/******************************************/
+
+#basdiapo{
+	float: left;
+	background: #e8ebf1;
+	width: 100%;
+}
+
+#basdiapo ul {
+	float: left;
+	margin: 58px 0px 0px 196px;
+}
+
+#basdiapo ul li{
+	float: left;
+	list-style: none;
+}
+
+#basdiapo ul li p{
+	width: 218px;
+}
+
+#basdiapo ul li p.titre_basdiapo{
+	padding: 0px 0px 0px 60px;
+	text-transform: uppercase;
+}
+
+#basdiapo ul li#crayon{
+	background:url(images/crayon.png) no-repeat;
+}
+
+#basdiapo ul li#responsive{
+	background:url(images/responsive.png) no-repeat;
+}
+
+#basdiapo ul li#psd{
+	background:url(images/psd.png) no-repeat;
+}
+
+#basdiapo ul li#coding{
+	background:url(images/avion.png) no-repeat;
+}
+
+#latest_work {
+  float: left;
+  margin: 2px 0 0 196px;
+}
+
+#latest_work h3 {
+  background: url("images/fleche.png") no-repeat scroll 0 0 transparent;
+  margin: 16px 0 9px;
+  padding: 0 0 0 40px;
+}
+
+#latest_work #carroussel {
+  margin-top: 20px;
+  width: 1282px;
+}
+
+#latest_work .hr {
+  background: none repeat scroll 0 0 #DFE1E5;
+  clear: both;
+  height: 1px;
+}
+
+#latest_work .hr:first-child{
+  margin-top:16px;
+}
+
+#latest_work .hr ~ .hr{
+  margin-top:40px;
+}
+
+#latest_work .boxcaption{
+  display: block;
+  background: #2aacc8;
+  width: 220px;
+}
+
+
+
+.boxgrid { 
+    width:325px; 
+    height:260px; 
+    margin:10px; 
+    float:left; 
+    background:#161613; 
+    border:solid 2px #8399AF; 
+    overflow:hidden; 
+    position:relative; 
+} 
+.boxgrid img { 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    border:0; 
+}
+
+.boxcaption { 
+    float:left; 
+    position:absolute; 
+    background:#000; 
+    height:100px; 
+    width:100%; 
+    opacity:.8; 
+    /* Pour IE 5-7 */ 
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80); 
+    /* Pour IE 8 */ 
+    -MS-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; 
+}
+
+.captionfull .boxcaption { 
+    top:260px; 
+    left:0; 
+} 
+.caption .boxcaption { 
+    top:220px; 
+    left:0; 
+} 
+
+
+
+#temoignage{ 
+	float: left;
+	margin: 58px 0px 0px 196px;
+	width: 424px;
+}
+
+#temoignage h3 {
+  background: url("images/temoignage.png") no-repeat scroll 0 0 transparent;
+  padding: 0 0 0 40px;
+}
+
+#client{ 
+	float: left;
+	margin: 58px 0px 0px 93px;
+	width: 480px;
+}
+
+#client h3 {
+  background: url("images/client.png") no-repeat scroll 0 0 transparent;
+  padding: 0 0 0 40px;
+}
+
+#download
+{
+	float: left;
+	margin: 58px 0px 0px 196px;
+	background: #e8fcfe;
+	padding: 9px;
+	border: 1px solid #81e4ed;
+}
+
+#download p
+{
+	float: left;
+	width: 612px;
+}
+
+#download #btn_download_conteneur{
+background: linear-gradient(to bottom, #94f7ff 0%,#2aacc8 100%);
+border-left: 1px solid #2496AE;
+border-radius: 8px 8px 8px 8px;
+border-right: 1px solid #2496AE;
+border-top: 1px solid #2496AE;
+box-shadow: 1px 0 1px #D9EBED, -1px 0 1px #D9EBED, 0 3px 3px #BFD0D1;
+float: left;
+margin: -80px 0 0 780px;
+padding: 23px 0 23px 71px;
+width: 240px;
+}
+
+#download #btn_download {
+  background: url("images/download.png") no-repeat scroll 14px -1px transparent;
+  display: block;
+  font-family: "Arial Rounded MT Bold";
+  font-size: 18px;
+  height: 28px;
+  margin-left: -59px;
+  padding-left: 93px;
+  width: 145px;
+}
+
+#footer {
+  background: none repeat scroll 0 0 #E8EBF1;
+  float: left;
+  margin: 58px 0 0 196px;
+}
+
+#footer ul li.level1 {
+  float: left;
+  margin-left: 63px;
+  width: 15%;
+}
+
+#footer ul li.level1:first-child {
+  margin-left: 0px;
+}
+
+#footer ul li.level1 ul li, #footer ul li.level1 p{  
+  font-weight: normal;
+}
+
+
+
+
+
+
